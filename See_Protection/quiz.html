@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Save The Ocean - Home</title>
+    <meta charset="utf-8">
+    <meta description="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- フォント -->
+ 
+  </head>
+  <body>
+    <header class="header header-color-white">
+      <div id="logo-div">
+        <a id="logo-a" href="index.html"><img id="logo-img" src="images/logo/logo01.png"></a>
+      </div>
+      <!-- ハンバーガーメニュー -->
+      <div class="nav">
+        <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+        <input id="drawer_input" class="drawer_hidden" type="checkbox">
+        <!-- ハンバーガーアイコン -->
+        <label for="drawer_input" class="drawer_open"><span></span></label>
+        <!-- ナビゲーション -->
+        <nav class="nav_content">
+          <ul class="nav_list">
+            <li><a class="nav_item-chg" href="index.html">海について</a></li>
+            <li><a class="nav_item-chg" href="report.html">活動レポート</a></li>
+            <li><a class="nav_item-chg" href="volunteer.html">ボランティア募集</a></li>
+            <li><a class="nav_item-chg" href="quiz.html">クイズ</a></li>
+            <li><a class="nav_item-chg" href="aboutus.html">私たちについて</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+
+      <!-- メイン画像 -->
+      <div id="background"></div>
+      <div id="quiz-main-div">
+       <img id="quiz-main-img" src="images/photo/beach/sea.jpg">
+       <p id="quiz-img-title">クイズ</p>
+      </div>
+
+      <!-- quiz-commentセクション -->
+      <section id="quiz">
+        <div id="quiz-window">
+
+          <!-- カテゴリーメッセージ -->
+          <div id="quiz-msg">
+            <div id="quiz-comment">
+              <img src="images/illust/char/hukidashi.png">
+              <p id="choose-your-category">カテゴリーを選んでね！</p>
+            </div>
+            <div id="quiz-comment2">
+              <img src="images/illust/char/dolphin2.png">
+            </div>
+          </div>
+
+          <!-- カテゴリー選択エリア -->
+          <div id="category-selection-flex">
+            <div class="categoly-list">
+              <p id="cetegory-sea-living" class="category-selection">海のいきものクイズ</p>
+              <p id="cetegory-sea-clean" class="category-selection">海岸そうじクイズ</p>            
+            </div>
+              <div class="categoly-list">
+              <p id="cetegory-plastic-pollution" class="category-selection">プラスチック汚染のクイズ</p>
+              <p id="cetegory-sea-env" class="category-selection">海の環境クイズ</p>
+            </div>
+          </div>
+
+
+          <!-- 海のいきものクイズ -->
+          <div id="quiz-sea-living">
+            <div class="quiz-area">
+              <p class="quiz-num-title">No.1</p>
+              <div class="quiz-area-flex">
+                <p class="quiz-question">海で一番大きな生き物は？</p>
+                <div class="quiz-select-ans">
+                  <div><input type="radio" class="quiz-radio" name="C1-ans-no1" value="A">A.クジラ</div>
+                  <div><input type="radio" class="quiz-radio" name="C1-ans-no1" value="B">B.イルカ</div>
+                  <div><input type="radio" class="quiz-radio" name="C1-ans-no1" value="C">C.サメ</div>
+                  <div><input type="radio" class="quiz-radio" name="C1-ans-no1" value="D">D.タコ</div>
+                </div>
+                <div class="result-display">
+                  <p id="C1-rslt-no1-A" class="result-msg correct-ans" style="visibility: hidden;">正解！</p>
+                  <p id="C1-rslt-no1-B" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C1-rslt-no1-C" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C1-rslt-no1-D" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                </div>
+              </div>
+            </div>
+
+  
+            <div class="quiz-area">
+              <p class="quiz-num-title">No.2</p>
+              <div class="quiz-area-flex">
+                <p class="quiz-question">海の中で一番速く泳ぐ生き物は？</p>
+                <div class="quiz-select-ans">
+                  <div><input type="radio" class="quiz-radio" name="C1-ans-no2" value="A">A.イルカ</div>
+                  <div><input type="radio" class="quiz-radio" name="C1-ans-no2" value="B">B.ウミガメ</div>
+                  <div><input type="radio" class="quiz-radio" name="C1-ans-no2" value="C">C.タコ</div>
+                  <div><input type="radio" class="quiz-radio" name="C1-ans-no2" value="D">D.カニ</div>
+                </div>
+                <div class="result-display">
+                  <p id="C1-rslt-no2-A" class="result-msg correct-ans" style="visibility: hidden;">正解！</p>
+                  <p id="C1-rslt-no2-B" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C1-rslt-no2-C" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C1-rslt-no2-D" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="quiz-area">
+              <p class="quiz-num-title">No.3</p>
+              <div class="quiz-area-flex">
+                <p class="quiz-question">海岸で見かける小さなカニの名前は？</p>
+                <div class="quiz-select-ans">
+                  <div><input type="radio" class="quiz-radio" name="C1-ans-no3" value="A">A.エビ</div>
+                  <div><input type="radio" class="quiz-radio" name="C1-ans-no3" value="B">B.イセエビ</div>
+                  <div><input type="radio" class="quiz-radio" name="C1-ans-no3" value="C">C.カニクイアザラシ</div>
+                  <div><input type="radio" class="quiz-radio" name="C1-ans-no3" value="D">D.エビスガニ</div>
+                </div>
+                <div class="result-display">
+                  <p id="C1-rslt-no3-A" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C1-rslt-no3-B" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C1-rslt-no3-C" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C1-rslt-no3-D" class="result-msg correct-ans" style="visibility: hidden;">正解！</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="quiz-area">
+              <p class="quiz-num-title">No.4</p>
+              <div class="quiz-area-flex">
+                <p class="quiz-question">海洋生物がゴミを誤食する主な原因は？</p>
+                <div class="quiz-select-ans">
+                  <div><input type="radio" class="quiz-radio" name="C1-ans-no4" value="A">A.見た目が美味しそうだから</div>
+                  <div><input type="radio" class="quiz-radio" name="C1-ans-no4" value="B">B.誤って餌と間違えるから</div>
+                  <div><input type="radio" class="quiz-radio" name="C1-ans-no4" value="C">C.食べ物がなくなるから</div>
+                  <div><input type="radio" class="quiz-radio" name="C1-ans-no4" value="D">D.ゴミが光るから</div>
+                </div>
+                <div class="result-display">
+                  <p id="C1-rslt-no4-A" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C1-rslt-no4-B" class="result-msg correct-ans" style="visibility: hidden;">正解！</p>
+                  <p id="C1-rslt-no4-C" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C1-rslt-no4-D" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="quiz-area">
+              <p class="quiz-num-title">No.5</p>
+              <div class="quiz-area-flex">
+                <p class="quiz-question">海洋生物にとって最も危険なゴミは？</p>
+                <div class="quiz-select-ans">
+                  <div><input type="radio" class="quiz-radio" name="C1-ans-no5" value="A">A.ビニール袋</div>
+                  <div><input type="radio" class="quiz-radio" name="C1-ans-no5" value="B">B.プラスチックストロー</div>
+                  <div><input type="radio" class="quiz-radio" name="C1-ans-no5" value="C">C.アルミ缶</div>
+                  <div><input type="radio" class="quiz-radio" name="C1-ans-no5" value="D">D.使い捨てカメラ</div>
+                </div>
+                <div class="result-display">
+                  <p id="C1-rslt-no5-A" class="result-msg correct-ans" style="visibility: hidden;">正解！</p>
+                  <p id="C1-rslt-no5-B" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C1-rslt-no5-C" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C1-rslt-no5-D" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- 海岸そうじクイズ -->
+          <div id="quiz-sea-clean">
+            <div class="quiz-area">
+              <p class="quiz-num-title">No.11</p>
+              <div class="quiz-area-flex">
+                <p class="quiz-question">海岸で見つけたゴミはどうする？</p>
+                <div class="quiz-select-ans">
+                  <div><input type="radio" class="quiz-radio" name="C3-ans-no1" value="A">A.海に投げる</div>
+                  <div><input type="radio" class="quiz-radio" name="C3-ans-no1" value="B">B.そのままにしておく</div>
+                  <div><input type="radio" class="quiz-radio" name="C3-ans-no1" value="C">C.ゴミ箱に捨てる</div>
+                  <div><input type="radio" class="quiz-radio" name="C3-ans-no1" value="D">D.ゴミ拾いをする</div>
+                </div>
+                <div class="result-display">
+                  <p id="C3-rslt-no1-A" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C3-rslt-no1-B" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C3-rslt-no1-C" class="result-msg correct-ans" style="visibility: hidden;">正解！</p>
+                  <p id="C3-rslt-no1-D" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="quiz-area">
+              <p class="quiz-num-title">No.12</p>
+              <div class="quiz-area-flex">
+                <p class="quiz-question">海岸でゴミを見つけたら何をする？</p>
+                <div class="quiz-select-ans">
+                  <div><input type="radio" class="quiz-radio" name="C3-ans-no2" value="A">A.そのままにしておく</div>
+                  <div><input type="radio" class="quiz-radio" name="C3-ans-no2" value="B">B.ゴミ箱に捨てる</div>
+                  <div><input type="radio" class="quiz-radio" name="C3-ans-no2" value="C">C.踏みつける</div>
+                  <div><input type="radio" class="quiz-radio" name="C3-ans-no2" value="D">D.海に投げる</div>
+                </div>
+                <div class="result-display">
+                  <p id="C3-rslt-no2-A" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C3-rslt-no2-B" class="result-msg correct-ans" style="visibility: hidden;">正解！</p>
+                  <p id="C3-rslt-no2-C" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C3-rslt-no2-D" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="quiz-area">
+              <p class="quiz-num-title">No.13</p>
+              <div class="quiz-area-flex">
+                <p class="quiz-question">海岸に落ちているゴミを拾うのはなぜ大事ですか？</p>
+                <div class="quiz-select-ans">
+                  <div><input type="radio" class="quiz-radio" name="C3-ans-no3" value="A">A.ゴミが少ないと楽しい</div>
+                  <div><input type="radio" class="quiz-radio" name="C3-ans-no3" value="B">B.海の生き物を守るため</div>
+                  <div><input type="radio" class="quiz-radio" name="C3-ans-no3" value="C">C.ゴミが好きだから</div>
+                  <div><input type="radio" class="quiz-radio" name="C3-ans-no3" value="D">D.ゴミが多い方がいいから</div>
+                </div>
+                <div class="result-display">
+                  <p id="C3-rslt-no3-A" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C3-rslt-no3-B" class="result-msg correct-ans" style="visibility: hidden;">正解！</p>
+                  <p id="C3-rslt-no3-C" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C3-rslt-no3-D" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                </div>
+              </div>
+            </div>
+            <div class="quiz-area">
+              <p class="quiz-num-title">No.14</p>
+              <div class="quiz-area-flex">
+                <p class="quiz-question">海岸そうじをするときに気をつけることは？</p>
+                <div class="quiz-select-ans">
+                  <div><input type="radio" class="quiz-radio" name="C3-ans-no4" value="A">A. ゴミを見逃す</div>
+                  <div><input type="radio" class="quiz-radio" name="C3-ans-no4" value="B">B. 安全に気をつける</div>
+                  <div><input type="radio" class="quiz-radio" name="C3-ans-no4" value="C">C.ゴミを海に投げる</div>
+                  <div><input type="radio" class="quiz-radio" name="C3-ans-no4" value="D">D.ゴミを食べる</div>
+                </div>
+                <div class="result-display">
+                  <p id="C3-rslt-no4-A" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C3-rslt-no4-B" class="result-msg correct-ans" style="visibility: hidden;">正解！</p>
+                  <p id="C3-rslt-no4-C" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C3-rslt-no4-D" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="quiz-area">
+              <p class="quiz-num-title">No.15</p>
+              <div class="quiz-area-flex">
+                <p class="quiz-question">海岸での遊びの後、何をするべきですか？</p>
+                <div class="quiz-select-ans">
+                  <div><input type="radio" class="quiz-radio" name="C3-ans-no5" value="A">A..ゴミを拾って帰る</div>
+                  <div><input type="radio" class="quiz-radio" name="C3-ans-no5" value="B">B.水に入る</div>
+                  <div><input type="radio" class="quiz-radio" name="C3-ans-no5" value="C">C.何もしない</div>
+                  <div><input type="radio" class="quiz-radio" name="C3-ans-no5" value="D">D.ゴミを置いて帰る</div>
+                </div>
+                <div class="result-display">
+                  <p id="C3-rslt-no5-A" class="result-msg correct-ans" style="visibility: hidden;">正解！</p>
+                  <p id="C3-rslt-no5-B" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C3-rslt-no5-C" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C3-rslt-no5-D" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+          <!-- プラスチック汚染のクイズ -->
+          <div id="quiz-plastic-pollution">
+            <div class="quiz-area">
+              <p class="quiz-num-title">No.6</p>
+              <div class="quiz-area-flex">
+                <p class="quiz-question">海に浮かぶプラスチックの塊を何と呼ぶ？</p>
+                <div class="quiz-select-ans">
+                  <div><input type="radio" class="quiz-radio" name="C2-ans-no1" value="A">A.ゴミ山</div>
+                  <div><input type="radio" class="quiz-radio" name="C2-ans-no1" value="B">B.プラスチックビーチ</div>
+                  <div><input type="radio" class="quiz-radio" name="C2-ans-no1" value="C">C.プラスチック島</div>
+                  <div><input type="radio" class="quiz-radio" name="C2-ans-no1" value="D">D.ゴミ島</div>
+                </div>
+                <div class="result-display">
+                  <p id="C2-rslt-no1-A" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C2-rslt-no1-B" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C2-rslt-no1-C" class="result-msg correct-ans" style="visibility: hidden;">正解！</p>
+                  <p id="C2-rslt-no1-D" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="quiz-area">
+              <p class="quiz-num-title">No.7</p>
+              <div class="quiz-area-flex">
+                <p class="quiz-question">プラスチックが海に入ると、何が起こる？</p>
+                <div class="quiz-select-ans">
+                  <div><input type="radio" class="quiz-radio" name="C2-ans-no2" value="A">A.海の温度が下がる</div>
+                  <div><input type="radio" class="quiz-radio" name="C2-ans-no2" value="B">B.海水が透明になる</div>
+                  <div><input type="radio" class="quiz-radio" name="C2-ans-no2" value="C">C.海洋生物が危険になる</div>
+                  <div><input type="radio" class="quiz-radio" name="C2-ans-no2" value="D">D.海が緑色になる</div>
+                </div>
+                <div class="result-display">
+                  <p id="C2-rslt-no2-A" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C2-rslt-no2-B" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C2-rslt-no2-C" class="result-msg correct-ans" style="visibility: hidden;">正解！</p>
+                  <p id="C2-rslt-no2-D" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="quiz-area">
+              <p class="quiz-num-title">No.8</p>
+              <div class="quiz-area-flex">
+                <p class="quiz-question">プラスチックは海でどのようになる？</p>
+                <div class="quiz-select-ans">
+                  <div><input type="radio" class="quiz-radio" name="C2-ans-no3" value="A">A.分解される</div>
+                  <div><input type="radio" class="quiz-radio" name="C2-ans-no3" value="B">B.再生される</div>
+                  <div><input type="radio" class="quiz-radio" name="C2-ans-no3" value="C">C.海洋生物の餌になる</div>
+                  <div><input type="radio" class="quiz-radio" name="C2-ans-no3" value="D">D.海水を濁らせる</div>
+                </div>
+                <div class="result-display">
+                  <p id="C2-rslt-no3-A" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C2-rslt-no3-B" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C2-rslt-no3-C" class="result-msg correct-ans" style="visibility: hidden;">正解！</p>
+                  <p id="C2-rslt-no3-D" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="quiz-area">
+              <p class="quiz-num-title">No.9</p>
+              <div class="quiz-area-flex">
+                <p class="quiz-question">ビーチで見つけたプラスチックはどうする？</p>
+                <div class="quiz-select-ans">
+                  <div><input type="radio" class="quiz-radio" name="C2-ans-no4" value="A">A.海に投げる</div>
+                  <div><input type="radio" class="quiz-radio" name="C2-ans-no4" value="B">B.そのままにしておく</div>
+                  <div><input type="radio" class="quiz-radio" name="C2-ans-no4" value="C">C.ゴミ箱に捨てる</div>
+                  <div><input type="radio" class="quiz-radio" name="C2-ans-no4" value="D">D.踏みつける</div>
+                </div>
+                <div class="result-display">
+                  <p id="C2-rslt-no4-A" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C2-rslt-no4-B" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C2-rslt-no4-C" class="result-msg correct-ans" style="visibility: hidden;">正解！</p>
+                  <p id="C2-rslt-no4-D" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="quiz-area">
+              <p class="quiz-num-title">No.10</p>
+              <div class="quiz-area-flex">
+                <p class="quiz-question">プラスチックを使わないことの良い点は？</p>
+                <div class="quiz-select-ans">
+                  <div><input type="radio" class="quiz-radio" name="C2-ans-no5" value="A">A.海が汚れない</div>
+                  <div><input type="radio" class="quiz-radio" name="C2-ans-no5" value="B">B.使い捨てが楽</div>
+                  <div><input type="radio" class="quiz-radio" name="C2-ans-no5" value="C">C.ゴミが減る</div>
+                  <div><input type="radio" class="quiz-radio" name="C2-ans-no5" value="D">D.丈夫な製品が得られる</div>
+                </div>
+                <div class="result-display">
+                  <p id="C2-rslt-no5-A" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C2-rslt-no5-B" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C2-rslt-no5-C" class="result-msg correct-ans" style="visibility: hidden;">正解！</p>
+                  <p id="C2-rslt-no5-D" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+          <!-- 海の環境クイズ -->
+          <div id="quiz-sea-env">
+            <div class="quiz-area">
+              <p class="quiz-num-title">No.16</p>
+              <div class="quiz-area-flex">
+                <p class="quiz-question">海の色が薄くなる原因は何ですか？</p>
+                <div class="quiz-select-ans">
+                  <div><input type="radio" class="quiz-radio" name="C4-ans-no1" value="A">A.海草</div>
+                  <div><input type="radio" class="quiz-radio" name="C4-ans-no1" value="B">B.ゴミ</div>
+                  <div><input type="radio" class="quiz-radio" name="C4-ans-no1" value="C">C.海洋生物</div>
+                  <div><input type="radio" class="quiz-radio" name="C4-ans-no1" value="D">D.クジラ</div>
+                </div>
+                <div class="result-display">
+                  <p id="C4-rslt-no1-A" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C4-rslt-no1-B" class="result-msg correct-ans" style="visibility: hidden;">正解！</p>
+                  <p id="C4-rslt-no1-C" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C4-rslt-no1-D" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="quiz-area">
+              <p class="quiz-num-title">No.17</p>
+              <div class="quiz-area-flex">
+                <p class="quiz-question">海洋生物の生息地を保護する方法は？</p>
+                <div class="quiz-select-ans">
+                  <div><input type="radio" class="quiz-radio" name="C4-ans-no2" value="A">A.ゴミを拾う</div>
+                  <div><input type="radio" class="quiz-radio" name="C4-ans-no2" value="B">B.ゴミを海に投げる</div>
+                  <div><input type="radio" class="quiz-radio" name="C4-ans-no2" value="C">C.人間が泳ぐ</div>
+                  <div><input type="radio" class="quiz-radio" name="C4-ans-no2" value="D">D.ゴミを見逃す</div>
+                </div>
+                <div class="result-display">
+                  <p id="C4-rslt-no2-A" class="result-msg correct-ans" style="visibility: hidden;">正解！</p>
+                  <p id="C4-rslt-no2-B" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C4-rslt-no2-C" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C4-rslt-no2-D" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="quiz-area">
+              <p class="quiz-num-title">No.18</p>
+              <div class="quiz-area-flex">
+                <p class="quiz-question">海洋生物の保護に関する正しい事は？</p>
+                <div class="quiz-select-ans">
+                  <div><input type="radio" class="quiz-radio" name="C4-ans-no3" value="A">A.ゴミを海に捨てても良いです</div>
+                  <div><input type="radio" class="quiz-radio" name="C4-ans-no3" value="B">B.海洋生物はゴミを楽しんで食べます</div>
+                  <div><input type="radio" class="quiz-radio" name="C4-ans-no3" value="C">C.ゴミは海洋生物にとって危険です</div>
+                  <div><input type="radio" class="quiz-radio" name="C4-ans-no3" value="D">D.海洋生物はゴミを遊び道具として使います</div>
+                </div>
+                <div class="result-display">
+                  <p id="C4-rslt-no3-A" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C4-rslt-no3-B" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C4-rslt-no3-C" class="result-msg correct-ans" style="visibility: hidden;">正解！</p>
+                  <p id="C4-rslt-no3-D" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="quiz-area">
+              <p class="quiz-num-title">No.19</p>
+              <div class="quiz-area-flex">
+                <p class="quiz-question">海洋環境を保護するために何が必要ですか？</p>
+                <div class="quiz-select-ans">
+                  <div><input type="radio" class="quiz-radio" name="C4-ans-no4" value="A">A.海にゴミを投げる</div>
+                  <div><input type="radio" class="quiz-radio" name="C4-ans-no4" value="B">B.海をきれいにする</div>
+                  <div><input type="radio" class="quiz-radio" name="C4-ans-no4" value="C">C.海洋生物を食べる</div>
+                  <div><input type="radio" class="quiz-radio" name="C4-ans-no4" value="D">D.何もしない</div>
+                </div>
+                <div class="result-display">
+                  <p id="C4-rslt-no4-A" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C4-rslt-no4-B" class="result-msg correct-ans" style="visibility: hidden;">正解！</p>
+                  <p id="C4-rslt-no4-C" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C4-rslt-no4-D" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="quiz-area">
+              <p class="quiz-num-title">No.20</p>
+              <div class="quiz-area-flex">
+                <p class="quiz-question">海洋環境を保護するために私たちができることは？</p>
+                <div class="quiz-select-ans">
+                  <div><input type="radio" class="quiz-radio" name="C4-ans-no5" value="A">A.ゴミを海に捨てる</div>
+                  <div><input type="radio" class="quiz-radio" name="C4-ans-no5" value="B">B.海の生物を狩る</div>
+                  <div><input type="radio" class="quiz-radio" name="C4-ans-no5" value="C">C.ゴミを拾って捨てる</div>
+                  <div><input type="radio" class="quiz-radio" name="C4-ans-no5" value="D">D.海洋生物の生息地を荒らす</div>
+                </div>
+                <div class="result-display">
+                  <p id="C4-rslt-no5-A" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C4-rslt-no5-B" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                  <p id="C4-rslt-no5-C" class="result-msg correct-ans" style="visibility: hidden;">正解！</p>
+                  <p id="C4-rslt-no5-D" class="result-msg incorrect-ans" style="visibility: hidden;">不正解！</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <p id="completion-msg">お疲れ様でした！また遊んでね！</p>
+
+        </div>
+      </section>
+
+
+
+
+    </main>
+    <!-- フッター -->
+    <footer id="footer">
+      <div id="footer-window">
+        <div class="footer-window-div">
+          <p class="footer-div-head">海について</p>
+          <a class="footer-a" href="index.html"><p class="footer-div-cont">活動予定</p></a>
+          <a class="footer-a" href="report.html"><p class="footer-div-cont">活動レポート</p></a>
+          <a class="footer-a" href="volunteer.html"><p class="footer-div-cont">ボランティア募集</p></a>
+          <a class="footer-a" href="aboutus.html"><p class="footer-div-cont">私たちについて</p></a>
+        </div>
+        <div class="footer-window-div">
+          <p class="footer-div-head">ワークショップ</p>
+          <a class="footer-a" href="quiz.html"><p class="footer-div-cont">クイズ</p></a>
+        </div>
+        <div class="footer-window-div">
+          <p class="footer-div-head">メディア</p>
+          <a class="footer-a" href="https://youtube.com"><p class="footer-div-cont">Youtube</p></a>
+          <a class="footer-a" href="https://twitter.com"><p class="footer-div-cont">Twitter</p></a>
+          <a class="footer-a" href="https://instagram.com"><p class="footer-div-cont">Instagram</p></a>
+        </div>
+      </div>
+      <p id="copyright">&copy;copyright Save The Oceans. Inc</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
