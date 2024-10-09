@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stunning Coffee - Contact</title>
+    <meta charset="utf-8">
+    <meta description="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Jomolhariフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jomolhari&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header header-color">
+      <div>
+        <a id="logo-a" href="index.html"><div id="logo">Stunning Coffee</div></a>
+      </div>
+      <!-- ハンバーガーメニュー -->
+      <div class="nav">
+        <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+        <input id="drawer_input" class="drawer_hidden" type="checkbox">
+        <!-- ハンバーガーアイコン -->
+        <label for="drawer_input" class="drawer_open"><span></span></label>
+        <!-- ナビゲーション -->
+        <nav class="nav_content">
+          <ul class="nav_list">
+            <li><a class="nav_item" href="about.html"><p class="nav-a h_top">About</p></a></li>
+            <li><a class="nav_item" href="menus.html"><p class="nav-a h_border">Menus</p></a></li>
+            <li><a class="nav_item" href="event.html"><p class="nav-a h_border">Events</p></a></li>
+            <li><a class="nav_item" href="hire.html"><p class="nav-a h_border">Hiring</p></a></li>
+            <li><a class="nav_item" href="contact.html"><p class="nav-a h_border">Contact</p></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- メインタグ -->
+    <main>
+      <!-- Hiring -->
+      <section id="contact-main-img">
+        <div class="smb-img">
+          <img src="img/resume.jpg">
+        </div>
+        <p class="page-title">Contact</p>
+      </section>
+      
+      <!-- contact msg -->
+      <section id="contact-main-msg">
+
+        <div class="contact-msg-line">
+          <div class="contact-msg-title">Head Office</div>
+          <div class="contact-msg-desc">General enquiries, suggestion,<br>feedback and support.</div>
+        </div>
+        <div class="contact-msg-line">
+          <div class="contact-msg-title">Franchise</div>
+          <div class="contact-msg-desc">Interested in franchising ?<br>Contact us regarding franchise.</div>
+        </div>
+        <div class="contact-msg-line">
+          <div class="contact-msg-title">Roastery</div>
+          <div class="contact-msg-desc">Wholesale enquiries, bulk order,<br>training, suppliers.</div>
+        </div>
+        <div class="sendmsg-btn-div">
+          <button class="send-btn" type="submit" name="contact-send-msg">Send a Message</button>
+        </div> 
+      </section>
+
+      <!-- Formセクション -->
+      <section id="contact-apply-form">
+        <hr size="1" class="event-horizon">
+        <!-- form -->
+        <form>          
+          <!-- Name -->
+          <div>
+            <span class="event-item-title">Name</span>
+            <span class="event-mandatory">*</span>
+          </div>
+          <input class="event-form-input" type="text" name="contact-name" value="" placeholder="Sample Name">
+          <!-- Emails -->
+          <div>
+            <span class="event-item-title">Emails</span>
+            <span class="event-mandatory">*</span>
+          </div>          
+          <input class="event-form-input" type="text" name="contact-email" value="" placeholder="AAAA@sample.com">
+          <!-- Category -->
+          <div>
+            <span class="event-item-title">Category</span>
+            <span class="event-mandatory">*</span>
+          </div>          
+          <input class="event-form-input" type="text" name="contact-category" value="" placeholder="Franchise">
+          <!-- Subject -->
+          <div>
+            <span class="event-item-title">Subject</span>
+            <span class="event-mandatory">*</span>
+          </div>          
+          <input class="event-form-input" type="text" name="contact-subject" value="" placeholder="xxxxxxxxxx">
+          <!-- Message -->
+          <div>
+            <span class="event-item-title">Message</span>
+            <span class="event-mandatory">*</span>
+          </div>
+          <textarea class="event-form-input" name="contact-msg" value=""></textarea>
+          <div class="submit-btn-div">
+            <button id="hire-btn" class="submit-btn" type="submit" name="contact-submit">SUBMIT</button>
+          </div>          
+        </form>
+        <hr size="1" class="event-horizon">
+      </section>
+      
+    </main>
+    
+    <!-- フッター -->
+    <footer id="footer">
+      <p id="copyright">&copy;2024 Stunning Coffee. All Rights Reserved.</p>
+    </footer>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stunning Coffee - Home</title>
+    <meta charset="utf-8">
+    <meta description="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Jomolhariフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jomolhari&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header header-color">
+      <div>
+        <a id="logo-a" href="index.html"><div id="logo">Stunning Coffee</div></a>
+      </div>
+      <!-- ハンバーガーメニュー -->
+      <div class="nav">
+        <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+        <input id="drawer_input" class="drawer_hidden" type="checkbox">
+        <!-- ハンバーガーアイコン -->
+        <label for="drawer_input" class="drawer_open"><span></span></label>
+        <!-- ナビゲーション -->
+        <nav class="nav_content">
+          <ul class="nav_list">
+            <li><a class="nav_item" href="about.html"><p class="nav-a h_top">About</p></a></li>
+            <li><a class="nav_item" href="menus.html"><p class="nav-a h_border">Menus</p></a></li>
+            <li><a class="nav_item" href="event.html"><p class="nav-a h_border">Events</p></a></li>
+            <li><a class="nav_item" href="hire.html"><p class="nav-a h_border">Hiring</p></a></li>
+            <li><a class="nav_item" href="contact.html"><p class="nav-a h_border">Contact</p></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- メインタグ -->
+    <main>
+      <!-- メインイメージ -->
+      <section id="main-img">
+        <div id="img-flex">
+          <p class="img-flex">Why don't you<br>&nbsp;&nbsp;&nbsp;&nbsp;take a break here ?</p>
+          <div class="img-flex">
+            <img id="img" src="img/main-coffee.jpg">
+          </div>
+        </div>
+        <div id="msg-div">
+          <p class="main-msg">We serve any kinds of cafe drinks and foods.</p>
+          <p class="main-msg">Please check the details from the below button.</p>
+          <a href="about.html" id="main-msg-a"><p id="main-msg-a-p">Click here</p></a>
+        </div>
+      </section>
+    </main>
+    <!-- フッター -->
+    <footer id="footer">
+      <p id="copyright">&copy;2024 Stunning Coffee. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

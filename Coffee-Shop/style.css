@@ -1,0 +1,1039 @@
+body {
+  font-family: "Jomolhari", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/*================
+ PC用のスタイル
+=================*/
+@media screen and (min-width: 768px) {
+  /* 横幅設定 */
+  body {
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0;
+  }
+  header {
+    max-width: 100%;
+    min-width: 875px;
+  }
+  #logo {
+    font-size: 28px;
+    margin: 15px;
+  }
+  #logo-a {
+    text-decoration: none;
+  }
+  #logo-a:link {
+    color: #eee;
+  }
+  #logo-a:visited {
+    color: #eee;
+  }
+  #logo-a:hover {
+    color: #FFF1BD;
+  }
+  #logo-a:active {
+    color: #eee;
+  }
+  #logo-a:focus {
+    color: #eee;
+  }
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-color {
+    width: 100%;
+    background-color:rgba(92,90,86,0.25) ;
+  }
+
+  /* ナビゲーション */
+  .drawer_hidden {
+    display: none;
+  }
+  .nav_list {
+    display: flex;
+    list-style: none;
+    margin: 15px 0px;
+    padding: 0;
+  }
+   .nav-a {
+    margin: 0px 20px;
+    font-size: 28px;
+   }
+  .nav_item {
+    text-decoration: none;
+  }
+  .nav_item:link {
+    color: #eee;
+  }
+  .nav_item:visited {
+    color: #eee;
+  }
+  .nav_item:hover {
+    color: #FFF1BD;
+  }
+  .nav_item:active {
+    color: #eee;
+  }
+  .nav_item:focus {
+    color: #eee;
+  }
+
+  /* index.html */
+
+  /* main-imgセクション */
+  #main-img {
+    max-width: 1200px;
+    min-width: 900px;
+    color: #FFF1BD;
+    margin: 0 auto;
+  }
+  #img-flex {
+    display: flex;
+    margin: 35px 0 235px 0;
+  }
+  .img-flex {
+    width: 50%;
+  }
+  #img {
+    width: 85%;
+  }
+  #img-flex > p {
+    font-size: 34px;
+    padding: 25% 0 0 100px;
+  }
+  .main-msg {
+    margin: 10px auto;
+    width: 675px;
+    font-size: 30px;
+  }
+  #main-msg-a {
+    display: block;
+    text-decoration: none;
+    width: 275px;
+    margin: 0 auto;
+  }
+  #main-msg-a:visited {
+    color: #000000;
+  }
+  #main-msg-a:hover {
+    color: #FFF1BD;
+  }
+  #main-msg-a-p {
+    font-size: 28px;
+    background-color: #ffffff;
+    width: 275px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 50px auto 175px auto;
+  }
+
+  /* footer */
+  #copyright {
+    color: #FFF1BD;
+    font-size: 12px;
+    margin-left: 30px;
+  }
+
+  
+  .smb-img > img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;  /* 画像の型崩れ防止 */
+    position: relative;
+    z-index: 1;
+  }
+  .page-title {
+    position: relative;
+    z-index: 2;
+    font-size: 44px;
+    /* width: 180px; */
+    margin: 0 auto 0 auto;
+    top: -165px;
+    text-align: center;
+  }
+
+  /* about.html */
+
+  /* coffeeセクション */
+  #our-coffee {
+    max-width: 1200px;
+    min-width: 900px;
+    margin: 0 auto;
+  }
+  #our-coffee-div1 {
+    margin: -100px 0 75px 0;
+  }
+  #our-coffee-div2 {
+    margin: 75px 0 75px 0;
+  }
+  #description-beans {
+    left: 45%;
+  }
+  #tea-bag {
+    left: 8%;
+    top: 150px;
+  }
+  #description-beans, #tea-bag {
+    width: 550px;
+    height: 320px;
+    object-fit: cover;  /* 画像の型崩れ防止 */
+    position: relative;
+    z-index: 1;
+  }
+  .about-desc-title {
+    font-size: 30px;
+    margin: 0 0 10px 0;
+    border-bottom: 3px solid #955900;
+    width: 180px;
+  }
+  #about-description-coffee, #about-description-tea {
+    color: #000000;
+    background-color: #D7D7D7;
+    padding: 5px 20px 0px 20px;
+    width: 450px;
+    position: relative;
+    z-index: 2;
+  }
+  #about-description-coffee {
+    top: 375px;
+    left: 17%;
+  }
+  #about-description-tea {
+    top: -35px;
+    left: 47%;
+  }
+  .about-desc-detail {
+    font-size: 26px;
+    margin: 0;
+  }
+  /* our-goalsセクション */
+  #our-goals {
+    max-width: 1200px;
+    min-width: 900px;
+    margin: 185px auto 0 auto;
+  }
+  #our-goals-title {
+    color: #FFF1BD;
+    font-size: 28px;
+    width: 150px;
+    margin: 25px auto;
+    text-align: center;
+  }
+  #our-goals-msg {
+    color: #FFF1BD;
+    font-size: 22px;
+    width: 900px;
+    text-align: center;
+    margin: 25px auto 80px auto;
+  }
+  #our-goals > img {
+    width: 465px;
+    height: 600px;
+    object-fit: cover;  /* 画像の型崩れ防止 */
+    display: block;
+    margin: 80px auto 150px auto;
+  }
+  #our-goals-click {
+    font-size: 20px;
+    text-align: center;
+    margin: 150px 0 180px 0;
+  }
+  #our-goals-click > a {
+    text-decoration: none;
+  }
+  #our-goals-click > a:visited, #our-goals-click > a:link, #our-goals-click > a:active {
+    color: #D95959;
+  }
+  #our-goals-click > a:hover {
+    color: #FFF1BD;
+  }
+
+  /* menus.html */
+  #menus-list {
+    margin: 0 auto 150px auto;
+    min-width: 950px;
+    max-width: 1200px;
+  }
+  .menu-select {
+    text-align: center;
+    font-size: 36px;
+    color: #FFF1BD;
+    margin: 40px auto 15px auto;
+  }
+  .menu-type-tab-drink, .menu-type-tab-food {
+    text-align: center;
+    font-size: 26px;
+    color: #FFF1BD;
+    margin: 15px 0 150px 0;
+  }
+  .menu-type-tab-food {
+    display: none;
+  }
+  #drink-btn, #foods-btn,
+  #coffee-btn, #tea-btn, #other-btn,
+  #sand-btn, #pasta-btn
+  {
+    border-bottom: 2px solid #000000;
+    cursor: pointer;
+  }
+  .menu-container {
+    color: #FFF1BD;
+  }
+  .menu-container-flex {
+    width: 80%;
+    display: flex;
+    margin: 65px auto;
+  }
+  .menu-description {
+    width: 45%;
+  }
+  .menu-name, .menu-price {
+    font-size: 30px;
+    margin: 4px 0;
+  }
+  .menu-msg {
+    color: #BEBEBE;
+    font-size: 20px;
+    margin: 0;
+  }
+  .menu-img-container {
+    width: auto;
+    text-align: center;
+  }
+  .menu-img {
+    width: 450px;
+    height: 250px;
+    object-fit: cover;  /* 画像の型崩れ防止 */
+  }
+  /* カテゴリ制御 start*/
+  #Drink-Coffee {
+    display: none;
+  }
+  #Drink-Tea {
+    display: none;
+  }
+  #Drink-Other {
+    display: none;
+  }
+  #Food-Sand {
+    display: none;
+  }
+  #Food-Pasta {
+    display: none;
+  }
+  /* カテゴリ制御 end*/
+
+  /* Events.html */
+  /* メインメッセージ */
+  #event-main-msg {
+    max-width: 1200px;
+    min-width: 900px;
+    margin: 0 auto;
+  }
+  #event-main-msg > p {
+    color: #FFF1BD;
+    font-size: 20px;
+    text-align: center;
+  }
+  /* Formセクション */
+  #event-apply-form {
+    margin: 150px 0 25px 0;
+  }
+  #event-apply-form > form{
+    width: 450px;
+    margin: 0 auto;
+    padding-left: 100px;
+  }
+  #event-form-notice {
+    font-size: 28px;
+    text-align: center;
+    margin: 100px 0 50px 0;
+  }
+  .event-item-title {
+    color: #FFF1BD;
+    font-size: 26px;
+    margin: 0 0 -10px 0;
+  }
+  #event-apply-form > form > div {
+    margin: 15px 0 -10px 0;
+  }
+  .event-form-input {
+    width: 350px;
+    height: 35px;
+    color: #ffffff;
+    background-color: #ada9a9;
+  }
+  .event-form-input-date {
+    width: 250px;
+    height: 35px;
+    color: #ffffff;
+    background-color: #ada9a9;
+  }
+  .event-horizon {
+    margin: 100px auto 100px auto;
+    max-width: 80%;
+    min-width: 900px;
+    background-color: #FFFFFF;
+  }
+  .submit-btn-div {
+    width: 350px;
+    text-align: center;
+  }
+  .submit-btn {
+    font-size: 18px;
+    width: 115px;
+    border-width: 1px;
+    padding: 5px 10px;
+    background-color: #000000;
+    cursor: pointer;
+    color: #FFFFFF;
+    border: 1px solid #ffffff;
+    font-optical-sizing: auto;
+    font-family: "Jomolhari", serif;
+    margin-top: 75px;
+  }
+
+  /* 画像セクション */
+  #event-img {
+    max-width: 1200px;
+    min-width: 1000px;
+    margin: 100px auto 150px auto;
+  }
+  #event-img > div {
+    text-align: center;
+  }
+  #event-img > div > img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;  /* 画像の型崩れ防止 */    
+    margin: 0 15px;
+  }
+
+  /* hire.html */
+  /* メインメッセージ */
+  #hiring-main-msg {
+    max-width: 1200px;
+    min-width: 900px;
+    margin: 0 auto;
+  }
+  #hiring-title-msg {
+    font-size: 20px;
+    color: #FFF1BD;
+    width: 575px;
+    margin: 20px auto 180px auto;
+    text-align: center;
+  }
+  #hiring-heading {
+    font-size: 24px;
+    width: 400px;
+    padding-left: 65px;
+  }
+  .hire-main-description {
+    font-size: 20px;
+    color: #FFF1BD;
+    width: 900px;
+    margin: 0 auto;
+  }
+  /* Formセクション */
+  #hiring-apply-form {
+    margin: 150px 0 25px 0;
+  }
+  #hiring-apply-form > form{
+    width: 450px;
+    margin: 0 auto;
+    padding-left: 100px;
+  }
+  #hiring-apply-form > form > div {
+    margin: 15px 0 -10px 0;
+  }
+  #hire-form-notice {
+    font-size: 28px;
+    text-align: center;
+    margin: 100px 0 50px 0;
+  }
+  #hire-btn {
+    margin-bottom: 120px;
+  }
+
+
+  /* contact.html */
+  #contact-main-msg {
+    max-width: 1200px;
+    min-width: 900px;
+    margin: 0 auto;
+  }
+  .contact-msg-line {
+    display: flex;
+    width: 600px;
+    margin: 35px auto;
+  }
+  .contact-msg-title {
+    width: 160px;
+    height: 45px;
+    color: #FFF1BD;
+    font-size: 28px;
+    margin-right: 90px;
+    margin-top: 10px;
+    border-bottom: 1px solid #FFF1BD;
+    text-align: center;
+  }
+  .contact-msg-desc {
+    flex-grow: 1;
+    font-size: 20px;
+  }
+  .sendmsg-btn-div {
+    text-align: center;
+  }
+  .send-btn {
+    font-size: 18px;
+    width: 155px;
+    border-width: 1px;
+    padding: 5px 10px;
+    background-color: #000000;
+    cursor: pointer;
+    color: #FFFFFF;
+    border: 1px solid #ffffff;
+    font-optical-sizing: auto;
+    font-family: "Jomolhari", serif;
+    margin-top: 75px;
+  }
+
+  /* Formセクション */
+  #contact-apply-form {
+    margin: 100px 0 25px 0;
+  }
+  #contact-apply-form > form{
+    width: 450px;
+    margin: 0 auto;
+    padding-left: 100px;
+  }
+  #contact-apply-form > form > div {
+    margin: 15px 0 -10px 0;
+  }
+  #contact-form-notice {
+    font-size: 28px;
+    text-align: center;
+    margin: 100px 0 50px 0;
+  }
+  #hire-btn {
+    margin-bottom: 120px;
+  }
+
+}
+
+
+/* ======================================================================================================================================================================== */
+/*================
+ スマホ用のスタイル
+=================*/
+@media screen and (max-width: 767px) {
+  body {
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0;
+  }
+  main {
+    max-width: 650px;
+    min-width: 320px;
+    /* color: #ffffff; */
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    /* background: #d49e61; */
+    background-color:rgba(92,90,86,0.25) ;
+    max-width: 767px;
+    min-width: 320px;
+  }
+
+  /* ナビゲーション */
+  /* チェックボックスを非表示にする */
+  .drawer_hidden {
+    display: none;
+  }
+  /* ハンバーガーアイコンの設置スペース */
+  .drawer_open {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;/* 重なり順を一番上にする */
+    cursor: pointer;
+  }
+  /* ハンバーガーメニューのアイコン */
+  .drawer_open span,
+  .drawer_open span:before,
+  .drawer_open span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background: #ffffff;
+    transition: 0.5s;
+    position: absolute;
+  }
+  /* 三本線の一番上の棒の位置調整 */
+  .drawer_open span:before {
+    bottom: 8px;
+  }
+  /* 三本線の一番下の棒の位置調整 */
+  .drawer_open span:after {
+    top: 8px;
+  }
+  /* アイコンがクリックされたら真ん中の線を透明にする */
+  #drawer_input:checked ~ .drawer_open span {
+    background: rgba(255, 255, 255, 0);
+  }
+  /* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+  #drawer_input:checked ~ .drawer_open span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+  }
+  #drawer_input:checked ~ .drawer_open span::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+  /* メニューのデザイン*/
+  .nav_content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%; /* メニューを画面の外に飛ばす */
+    z-index: 99;
+    background: #2b2929;
+    transition: .5s;
+  }
+  /* メニュー黒ポチを消す */
+  .nav_list {
+    list-style: none;
+    padding: 0;
+    max-width: 635px;
+    min-width: 400px;
+  }
+  /* アイコンがクリックされたらメニューを表示 */
+  #drawer_input:checked ~ .nav_content {
+    left: 65%;/* メニューを画面に入れる */
+  }
+  .nav_list > li {
+    /* padding: 20px 0px; */
+    width: 15%;
+    margin-left: 10%;
+  }
+  .nav_list > li > a {
+    /* padding: 20px 0px; */
+  }
+  .nav-a {
+    width: 80px;
+    margin: 0;
+    padding: 20px 0px;
+    text-align: center;
+  }
+  .nav_item, #logo-a, #main-msg-a {
+    text-decoration: none;
+  }
+  .nav_item:link, #logo-a:link {
+    color: #eee;
+  }
+  .nav_item:visited, #logo-a:visited {
+    color: #eee;
+  }
+  .nav_item:hover, #logo-a:hover {
+    color: #FFF1BD;
+  }
+  .nav_item:active, #logo-a:active {
+    color: #eee;
+  }
+  .nav_item:focus, #logo-a:focus {
+    color: #FFF1BD;
+  }
+  .h_top {
+    margin-top: 75px;
+  }
+  .h_border {
+    border-top: 1px solid #ffffff;
+  }
+
+  /* index.html */
+  #main-img {
+    color: #FFF1BD;
+  }
+  #img-flex {
+    position: relative;
+  }
+  #img-flex > p {
+    position: absolute;
+    top: 96%;
+    margin-left: 6%;
+  }
+  #img-flex > div {
+    width: 65%;
+    margin: 0 10% 0 auto;
+  }
+  #img {
+    width: 100%;
+  }
+  #msg-div {
+    width: 340px;
+    margin: 200px auto 0 auto;
+  }
+  #main-msg-a:visited {
+    color: #000000;
+  }
+  #main-msg-a:hover{
+    color: #857f7f;
+  }
+  #main-msg-a {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+  }
+  #main-msg-a-p {
+    text-align: center;
+    width: 100px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    margin: 50px auto 150px auto;
+  }
+  footer {
+    color: #FFF1BD;
+    font-size: 10px;
+  }
+
+
+  /* about.html */
+  .smb-img > img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;  /* 画像の型崩れ防止 */
+    position: relative;
+    z-index: 1;
+  }
+  .page-title {
+    position: relative;
+    z-index: 2;
+    font-size: 32px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    top: -105px;
+  }
+
+  /* coffeeセクション */
+  #our-coffee {
+    max-width: 635px;
+    min-width: 400px;
+    margin: 0 auto;
+  }
+  #our-coffee-div1 {
+    margin: -100px 0 75px 0;
+  }
+  #our-coffee-div2 {
+    margin: 75px 0 75px 0;
+  }
+  #description-beans {
+    left: 45%;
+  }
+  #tea-bag {
+    left: 8%;
+    top: 100px;
+  }
+  #description-beans, #tea-bag {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;  /* 画像の型崩れ防止 */
+    position: relative;
+    z-index: 1;
+  }
+  .about-desc-title {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    border-bottom: 2px solid #955900;
+    width: 120px;
+  }
+  #about-description-coffee, #about-description-tea {
+    color: #000000;
+    background-color: #D7D7D7;
+    padding: 5px 20px 0px 20px;
+    position: relative;
+    z-index: 2;
+  }
+  #about-description-coffee {
+    top: 235px;
+    left: 8%;
+    width: 275px;
+  }
+  #about-description-tea {
+    top: -10px;
+    left: 38%;
+    width: 200px;
+  }
+  .about-desc-detail {
+    font-size: 16px;
+    margin: 0;
+  }
+  /* our-goalsセクション */
+  #our-goals {
+    max-width: 635px;
+    min-width: 400px;
+    margin: 185px auto 0 auto;
+  }
+  #our-goals-title {
+    color: #FFF1BD;
+    font-size: 20px;
+    width: 150px;
+    margin: 25px auto;
+    text-align: center;
+  }
+  #our-goals-msg {
+    color: #FFF1BD;
+    font-size: 14px;
+    text-align: center;
+    margin: 25px auto 80px auto;
+  }
+  #our-goals > img {
+    width: 200px;
+    height: 315px;
+    object-fit: cover;  /* 画像の型崩れ防止 */
+    display: block;
+    margin: 80px auto 100px auto;
+  }
+  #our-goals-click {
+    font-size: 14px;
+    text-align: center;
+    margin: 100px 0 180px 0;
+  }
+  #our-goals-click > a {
+    text-decoration: none;
+  }
+  #our-goals-click > a:visited, #our-goals-click > a:link, #our-goals-click > a:active {
+    color: #D95959;
+  }
+  #our-goals-click > a:hover {
+    color: #FFF1BD;
+  }
+
+
+  /* menus.html */
+  #menus-list {
+    margin: -40px auto 150px auto;
+    min-width: 450px;
+    max-width: 650px;
+  }
+  .menu-select {
+    text-align: center;
+    font-size: 20px;
+    color: #FFF1BD;
+    margin: 40px auto 15px auto;
+  }
+  .menu-type-tab-drink, .menu-type-tab-food {
+    text-align: center;
+    font-size: 16px;
+    color: #FFF1BD;
+    margin: 15px 0 80px 0;
+  }
+  .menu-type-tab-food {
+    display: none;
+  }
+  #drink-btn, #foods-btn,
+  #coffee-btn, #tea-btn, #other-btn,
+  #sand-btn, #pasta-btn
+  {
+    border-bottom: 2px solid #000000;
+  }
+  .menu-container {
+    color: #FFF1BD;
+  }
+  .menu-container-flex {
+    width: 90%;
+    display: flex;
+    margin: 65px auto;
+  }
+  .menu-description {
+    width: 55%;
+  }
+  .menu-name, .menu-price {
+    font-size: 20px;
+    margin: -7px 0;
+  }
+  .menu-msg {
+    color: #BEBEBE;
+    font-size: 14px;
+    margin: 5px 0 0 0;
+  }
+  .menu-img-container {
+    width: auto;
+    text-align: center;
+  }
+  .menu-img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;  /* 画像の型崩れ防止 */
+  }
+  /* カテゴリ制御 start*/
+  #Drink-Coffee {
+    display: none;
+  }
+  #Drink-Tea {
+    display: none;
+  }
+  #Drink-Other {
+    display: none;
+  }
+  #Food-Sand {
+    display: none;
+  }
+  #Food-Pasta {
+    display: none;
+  }
+  /* カテゴリ制御 end*/
+
+  /* Events.html */
+  /* メインメッセージ */
+  #event-main-msg {
+    min-width: 450px;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+  #event-main-msg > p {
+    color: #FFF1BD;
+    font-size: 16px;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+  }
+  /* Formセクション */
+  #event-apply-form {
+    margin: 100px 0 25px 0;
+  }
+  #event-apply-form > form{
+    width: 305px;
+    margin: 0 auto;
+    padding-left: 50px;
+  }
+  #event-form-notice {
+    font-size: 22px;
+    text-align: center;
+    margin: 50px 0 50px 0;
+  }
+  .event-item-title {
+    color: #FFF1BD;
+    font-size: 20px;
+    margin: 0 0 -10px 0;
+  }
+  #event-apply-form > form > div {
+    margin: 15px 0 -7px 0;
+  }
+  .event-form-input {
+    width: 200px;
+    height: 30px;
+    color: #ffffff;
+    background-color: #ada9a9;
+  }
+  .event-form-input-date {
+    width: 150px;
+    height: 30px;
+    color: #ffffff;
+    background-color: #ada9a9;
+  }
+  .event-horizon {
+    margin: 100px auto 100px auto;
+    max-width: 80%;
+    min-width: 400px;
+    background-color: #FFFFFF;
+  }
+
+  /* 画像セクション */
+  #event-img {
+    min-width: 450px;
+    max-width: 650px;
+    margin: 100px auto 150px auto;
+  }
+  #event-img > div {
+    text-align: center;
+  }
+  #event-img > div > img {
+    width: 125px;
+    height: 125px;
+    object-fit: cover;  /* 画像の型崩れ防止 */    
+    margin: 0 15px;
+  }
+
+
+  /* hire.html */
+  /* メインメッセージ */
+  #hiring-main-msg {
+    min-width: 450px;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+  #hiring-title-msg {
+    font-size: 14px;
+    color: #FFF1BD;
+    width: 375px;
+    margin: 20px auto 120px auto;
+    text-align: center;
+  }
+  #hiring-heading {
+    font-size: 18px;
+    width: 250px;
+    padding-left: 25px;
+  }
+  .hire-main-description {
+    font-size: 14px;
+    color: #FFF1BD;
+    width: 455px;
+    margin: 0 auto;
+  }
+  /* Formセクション */
+  #hiring-apply-form {
+    margin: 90px 0 25px 0;
+  }
+  #hiring-apply-form > form{
+    width: 305px;
+    margin: 0 auto;
+    padding-left: 100px;
+  }
+  #hiring-apply-form > form > div {
+    margin: 15px 0 -10px 0;
+  }
+  #hire-form-notice {
+    font-size: 20px;
+    text-align: center;
+    margin: 60px 0 50px 0;
+  }
+  #hire-btn {
+    margin-bottom: 120px;
+  }
+  .submit-btn-div {
+    width: 200px;
+    text-align: center;
+  }
+  .submit-btn {
+    font-size: 14px;
+    width: 100px;
+    border-width: 1px;
+    padding: 5px 10px;
+    background-color: #000000;
+    cursor: pointer;
+    color: #FFFFFF;
+    border: 1px solid #ffffff;
+    font-optical-sizing: auto;
+    font-family: "Jomolhari", serif;
+    margin-top: 35px;
+  }
+
+}
+

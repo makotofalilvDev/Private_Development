@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stunning Coffee - Hiring</title>
+    <meta charset="utf-8">
+    <meta description="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Jomolhariフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jomolhari&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header header-color">
+      <div>
+        <a id="logo-a" href="index.html"><div id="logo">Stunning Coffee</div></a>
+      </div>
+      <!-- ハンバーガーメニュー -->
+      <div class="nav">
+        <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+        <input id="drawer_input" class="drawer_hidden" type="checkbox">
+        <!-- ハンバーガーアイコン -->
+        <label for="drawer_input" class="drawer_open"><span></span></label>
+        <!-- ナビゲーション -->
+        <nav class="nav_content">
+          <ul class="nav_list">
+            <li><a class="nav_item" href="about.html"><p class="nav-a h_top">About</p></a></li>
+            <li><a class="nav_item" href="menus.html"><p class="nav-a h_border">Menus</p></a></li>
+            <li><a class="nav_item" href="event.html"><p class="nav-a h_border">Events</p></a></li>
+            <li><a class="nav_item" href="hire.html"><p class="nav-a h_border">Hiring</p></a></li>
+            <li><a class="nav_item" href="contact.html"><p class="nav-a h_border">Contact</p></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- メインタグ -->
+    <main>
+      <!-- Hiring -->
+      <section id="hiring-main-img">
+        <div class="smb-img">
+          <img src="img/cafe-stuff.jpg">
+        </div>
+        <p class="page-title">Join Our Team</p>
+      </section>
+      
+      <!-- Hiring msg -->
+      <section id="hiring-main-msg">
+        <p id="hiring-title-msg">We Stunning Coffee is always looking for the person who has the passion to work with us.</p>
+        <div>
+          <div id="hiring-heading">About Stunning Coffee Co</div>
+          <div class="hire-main-description">
+            <div>Here at Stunning Coffee we take great pride in not only our food and beverage program,</div>
+            <div>but the overall experience that our customers receive when you walk through our doors.</div>
+            <div>Our staff is a huge part of building that experience ! </div>
+            <div>We are looking for passionate, hard-working people to add to our team.</div>
+            <div>We encourage you stop by and check out our cafes to get a better understanding and feel for the brand itself.</div>
+            <div>If you're interested in working with us, fill out this application form and someone from our team will reach out to you to set up and interview !</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Formセクション -->
+      <section id="hiring-apply-form">
+        <p id="hire-form-notice">Please apply using this form</p>
+        <!-- form -->
+        <form>          
+          <!-- Name -->
+          <div>
+            <span class="event-item-title">Name</span>
+            <span class="event-mandatory">*</span>
+          </div>
+          <input class="event-form-input" type="text" name="hire-name" value="" placeholder="Sample Name">
+          <!-- Emails -->
+          <div>
+            <span class="event-item-title">Emails</span>
+            <span class="event-mandatory">*</span>
+          </div>          
+          <input class="event-form-input" type="text" name="hire-email" value="" placeholder="AAAA@sample.com">
+          <!-- Phone -->
+          <div>
+            <span class="event-item-title">Phone</span>
+            <span class="event-mandatory">*</span>
+          </div>
+          <input class="event-form-input" type="text" name="hire-phone" value="">
+          <!-- Position of Interest -->
+          <div>
+            <span class="event-item-title">Position of Interest</span>
+            <span class="event-mandatory">*</span>
+          </div>
+          <input class="event-form-input" type="text" name="hire-position" value="">
+          <!-- Location of Interest -->
+          <div>
+            <span class="event-item-title">Location of Interest</span>
+            <span class="event-mandatory">*</span>
+          </div>
+          <input class="event-form-input" type="text" name="hire-location" value="">
+          <!-- Desired Hours -->
+          <div>
+            <span class="event-item-title">Desired Hours</span>
+            <span class="event-mandatory">*</span>
+          </div>
+          <input class="event-form-input" type="text" name="hire-hour" value="">
+          <!-- Availability -->
+          <div>
+            <span class="event-item-title">What is your Availability</span>
+            <span class="event-mandatory">*</span>
+          </div>
+          <input class="event-form-input" type="text" name="hire-availability" value="">
+          <!-- Resume -->
+          <div>
+            <span class="event-item-title">Resume</span>
+            <span class="event-mandatory">*</span>
+          </div>
+          <textarea class="event-form-input" name="hire-resume" value="" placeholder="Please paste your resume text here"></textarea>
+          <div class="submit-btn-div">
+            <button id="hire-btn" class="submit-btn" type="submit" name="event-submit">SUBMIT</button>
+          </div>          
+        </form>
+      </section>
+      
+    </main>
+    
+    <!-- フッター -->
+    <footer id="footer">
+      <p id="copyright">&copy;2024 Stunning Coffee. All Rights Reserved.</p>
+    </footer>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</html>

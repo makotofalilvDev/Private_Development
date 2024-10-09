@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stunning Coffee - Menus</title>
+    <meta charset="utf-8">
+    <meta description="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Jomolhariフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jomolhari&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header header-color">
+      <div>
+        <a id="logo-a" href="index.html"><div id="logo">Stunning Coffee</div></a>
+      </div>
+      <!-- ハンバーガーメニュー -->
+      <div class="nav">
+        <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+        <input id="drawer_input" class="drawer_hidden" type="checkbox">
+        <!-- ハンバーガーアイコン -->
+        <label for="drawer_input" class="drawer_open"><span></span></label>
+        <!-- ナビゲーション -->
+        <nav class="nav_content">
+          <ul class="nav_list">
+            <li><a class="nav_item" href="about.html"><p class="nav-a h_top">About</p></a></li>
+            <li><a class="nav_item" href="menus.html"><p class="nav-a h_border">Menus</p></a></li>
+            <li><a class="nav_item" href="event.html"><p class="nav-a h_border">Events</p></a></li>
+            <li><a class="nav_item" href="hire.html"><p class="nav-a h_border">Hiring</p></a></li>
+            <li><a class="nav_item" href="contact.html"><p class="nav-a h_border">Contact</p></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- メインタグ -->
+    <main>
+      <section id="main-menus">
+        <div class="smb-img">
+          <img src="img/food-counter.jpg">
+        </div>
+        <p class="page-title">Menus</p>
+      </section>
+
+      <section id="menus-list">
+        <p class="menu-select"><a id="drink-btn">Drinks</a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;<a id="foods-btn">Foods</a></p>
+        <p class="menu-type-tab-drink"><a id="coffee-btn">Coffee</a>&nbsp;&nbsp;&nbsp;&nbsp;<a id="tea-btn">Tea</a>&nbsp;&nbsp;&nbsp;&nbsp;<a id="other-btn">Other</a></p>
+        <p class="menu-type-tab-food"><a id="sand-btn">Sandwitch</a>&nbsp;&nbsp;&nbsp;&nbsp;<a id="pasta-btn">Pasta</a></p>
+
+        <!-- Drinksタブ -->
+        <!-- Coffeeメニューリスト デフォルト表示-->
+        <div id="Drink-Coffee" class="menu-container">
+          <!-- メニュー1つ目 -->
+          <div class="menu-container-flex">
+            <div class="menu-description">
+              <p class="menu-name">・Black Coffee</p>
+              <p class="menu-price">&nbsp;&nbsp;&nbsp;&nbsp;$5.00</p>
+              <p class="menu-msg">Classic style coffee you <br>&nbsp;&nbsp;&nbsp;&nbsp;will be attracted</p>
+            </div>
+            <div class="menu-img-container">
+              <img class="menu-img" src="img/menu/blackcoffee.jpg">
+            </div>
+          </div>
+          <!-- メニュー2つ目 -->
+          <div class="menu-container-flex">
+            <div class="menu-description">
+              <p class="menu-name">・Cafe Latte</p>
+              <p class="menu-price">&nbsp;&nbsp;&nbsp;&nbsp;$5.00</p>
+              <p class="menu-msg">Brewing restful time with rich <br>&nbsp;&nbsp;&nbsp;&nbsp;espresso and steamed milk</p>
+            </div>
+            <div class="menu-img-container">
+              <img class="menu-img" src="img/menu/cafelatte.jpg">
+            </div>
+          </div>
+          <!-- メニュー3つ目 -->
+          <div class="menu-container-flex">
+            <div class="menu-description">
+              <p class="menu-name">・Cappuccino</p>
+              <p class="menu-price">&nbsp;&nbsp;&nbsp;&nbsp;$5.00</p>
+              <p class="menu-msg">Get things done with a dark<br>&nbsp;&nbsp;&nbsp;&nbsp;espresso in thick milk foam</p>
+            </div>
+            <div class="menu-img-container">
+              <img class="menu-img" src="img/menu/cappuccino.jpg">
+            </div>
+          </div>
+          <!-- メニュー4つ目 -->
+          <div class="menu-container-flex">
+            <div class="menu-description">
+              <p class="menu-name">・Cafe Mocha</p>
+              <p class="menu-price">&nbsp;&nbsp;&nbsp;&nbsp;$5.00</p>
+              <p class="menu-msg">Warm your heart with an<br>&nbsp;&nbsp;&nbsp;&nbsp;espresso with chocolate sauce</p>
+            </div>
+            <div class="menu-img-container">
+              <img class="menu-img" src="img/menu/cafemocha.jpg">
+            </div>
+          </div>
+        </div>
+        <!-- Teaメニューリスト -->
+        <div id="Drink-Tea" class="menu-container">
+          <!-- メニュー1つ目 -->
+          <div class="menu-container-flex">
+            <div class="menu-description">
+              <p class="menu-name">・Earl Grey Tea</p>
+              <p class="menu-price">&nbsp;&nbsp;&nbsp;&nbsp;$5.00</p>
+              <p class="menu-msg">Standard style of tea with <br>&nbsp;&nbsp;&nbsp;&nbsp;selected tea leaves</p>
+            </div>
+            <div class="menu-img-container">
+              <img class="menu-img" src="img/menu/earlgrey.jpg">
+            </div>
+          </div>
+          <!-- メニュー2つ目 -->
+          <div class="menu-container-flex">
+            <div class="menu-description">
+              <p class="menu-name">・Milk Tea</p>
+              <p class="menu-price">&nbsp;&nbsp;&nbsp;&nbsp;$5.00</p>
+              <p class="menu-msg">Enjoy elegant moment served <br>&nbsp;&nbsp;&nbsp;&nbsp;with rich milk and original tea</p>
+            </div>
+            <div class="menu-img-container">
+              <img class="menu-img" src="img/menu/milktea.jpg">
+            </div>
+          </div>
+          <!-- メニュー3つ目 -->
+          <div class="menu-container-flex">
+            <div class="menu-description">
+              <p class="menu-name">・Rooibos Tea</p>
+              <p class="menu-price">&nbsp;&nbsp;&nbsp;&nbsp;$5.00</p>
+              <p class="menu-msg">Get healthiness onto your body <br>&nbsp;&nbsp;&nbsp;&nbsp;by herb efficacy</p>
+            </div>
+            <div class="menu-img-container">
+              <img class="menu-img" src="img/menu/rooibos.jpg">
+            </div>
+          </div>
+          <!-- メニュー4つ目 -->
+          <div class="menu-container-flex">
+            <div class="menu-description">
+              <p class="menu-name">・Green Tea Latte</p>
+              <p class="menu-price">&nbsp;&nbsp;&nbsp;&nbsp;$5.00</p>
+              <p class="menu-msg">affect your heart peaceful<br>&nbsp;&nbsp;&nbsp;&nbsp;with green tea from Japan</p>
+            </div>
+            <div class="menu-img-container">
+              <img class="menu-img" src="img/menu/greentealatte.jpg">
+            </div>
+          </div>
+        </div>
+
+        <!-- Otherメニューリスト -->
+        <div id="Drink-Other" class="menu-container">
+          <!-- メニュー1つ目 -->
+          <div class="menu-container-flex">
+            <div class="menu-description">
+              <p class="menu-name">・Coke</p>
+              <p class="menu-price">&nbsp;&nbsp;&nbsp;&nbsp;$5.00</p>
+              <p class="menu-msg">Sample message Sample message <br>&nbsp;&nbsp;&nbsp;&nbsp;Sample message Sample message</p>
+            </div>
+            <div class="menu-img-container">
+              <img class="menu-img" src="img/menu/coke.jpg">
+            </div>
+          </div>
+          <!-- メニュー2つ目 -->
+          <div class="menu-container-flex">
+            <div class="menu-description">
+              <p class="menu-name">・Orange Juice</p>
+              <p class="menu-price">&nbsp;&nbsp;&nbsp;&nbsp;$5.00</p>
+              <p class="menu-msg">Sample message Sample message <br>&nbsp;&nbsp;&nbsp;&nbsp;Sample message Sample message</p>
+            </div>
+            <div class="menu-img-container">
+              <img class="menu-img" src="img/menu/orange.jpg">
+            </div>
+          </div>
+          <!-- メニュー3つ目 -->
+          <div class="menu-container-flex">
+            <div class="menu-description">
+              <p class="menu-name">・Yougurt & Acai</p>
+              <p class="menu-price">&nbsp;&nbsp;&nbsp;&nbsp;$5.00</p>
+              <p class="menu-msg">Sample message Sample message <br>&nbsp;&nbsp;&nbsp;&nbsp;Sample message Sample message</p>
+            </div>
+            <div class="menu-img-container">
+              <img class="menu-img" src="img/menu/acai.jpg">
+            </div>
+          </div>
+          <!-- メニュー4つ目 -->
+          <div class="menu-container-flex">
+            <div class="menu-description">
+              <p class="menu-name">・Berry Smoothie</p>
+              <p class="menu-price">&nbsp;&nbsp;&nbsp;&nbsp;$5.00</p>
+              <p class="menu-msg">Sample message Sample message <br>&nbsp;&nbsp;&nbsp;&nbsp;Sample message Sample message</p>
+            </div>
+            <div class="menu-img-container">
+              <img class="menu-img" src="img/menu/smoothie.jpg">
+            </div>
+          </div>
+        </div>
+        
+        <!-- Foodsタブ -->
+        <!-- Sandwitchメニューリスト デフォルト表示-->
+        <div id="Food-Sand" class="menu-container">
+          <!-- メニュー1つ目 -->
+          <div class="menu-container-flex">
+            <div class="menu-description">
+              <p class="menu-name">・BLT Sandwitch</p>
+              <p class="menu-price">&nbsp;&nbsp;&nbsp;&nbsp;$15.00</p>
+              <p class="menu-msg">Sample message Sample message <br>&nbsp;&nbsp;&nbsp;&nbsp;Sample message Sample message</p>
+            </div>
+            <div class="menu-img-container">
+              <img class="menu-img" src="img/menu/blt.jpg">
+            </div>
+          </div>
+          <!-- メニュー2つ目 -->
+          <div class="menu-container-flex">
+            <div class="menu-description">
+              <p class="menu-name">・Chicken Sandwitch</p>
+              <p class="menu-price">&nbsp;&nbsp;&nbsp;&nbsp;$15.00</p>
+              <p class="menu-msg">Sample message Sample message <br>&nbsp;&nbsp;&nbsp;&nbsp;Sample message Sample message</p>
+            </div>
+            <div class="menu-img-container">
+              <img class="menu-img" src="img/menu/chicken.jpg">
+            </div>
+          </div>
+          <!-- メニュー3つ目 -->
+          <div class="menu-container-flex">
+            <div class="menu-description">
+              <p class="menu-name">・Egg Sandwitch</p>
+              <p class="menu-price">&nbsp;&nbsp;&nbsp;&nbsp;$15.00</p>
+              <p class="menu-msg">Sample message Sample message <br>&nbsp;&nbsp;&nbsp;&nbsp;Sample message Sample message</p>
+            </div>
+            <div class="menu-img-container">
+              <img class="menu-img" src="img/menu/egg.jpg">
+            </div>
+          </div>
+          <!-- メニュー4つ目 -->
+          <div class="menu-container-flex">
+            <div class="menu-description">
+              <p class="menu-name">・Fish Sandwitch</p>
+              <p class="menu-price">&nbsp;&nbsp;&nbsp;&nbsp;$15.00</p>
+              <p class="menu-msg">Sample message Sample message <br>&nbsp;&nbsp;&nbsp;&nbsp;Sample message Sample message</p>
+            </div>
+            <div class="menu-img-container">
+              <img class="menu-img" src="img/menu/fish.jpg">
+            </div>
+          </div>
+          <!-- メニュー5つ目 -->
+          <div class="menu-container-flex">
+            <div class="menu-description">
+              <p class="menu-name">・Caprese Sandwitch</p>
+              <p class="menu-price">&nbsp;&nbsp;&nbsp;&nbsp;$15.00</p>
+              <p class="menu-msg">Sample message Sample message <br>&nbsp;&nbsp;&nbsp;&nbsp;Sample message Sample message</p>
+            </div>
+            <div class="menu-img-container">
+              <img class="menu-img" src="img/menu/Caprese.jpg">
+            </div>
+          </div>
+        </div>
+
+        <!-- Pastaメニューリスト-->
+        <div id="Food-Pasta" class="menu-container">
+          <!-- メニュー1つ目 -->
+          <div class="menu-container-flex">
+            <div class="menu-description">
+              <p class="menu-name">・Tomato Pasta</p>
+              <p class="menu-price">&nbsp;&nbsp;&nbsp;&nbsp;$15.00</p>
+              <p class="menu-msg">Sample message Sample message <br>&nbsp;&nbsp;&nbsp;&nbsp;Sample message Sample message</p>
+            </div>
+            <div class="menu-img-container">
+              <img class="menu-img" src="img/menu/tomato.jpg">
+            </div>
+          </div>
+          <!-- メニュー2つ目 -->
+          <div class="menu-container-flex">
+            <div class="menu-description">
+              <p class="menu-name">・Japanese Style Pasta</p>
+              <p class="menu-price">&nbsp;&nbsp;&nbsp;&nbsp;$15.00</p>
+              <p class="menu-msg">Sample message Sample message <br>&nbsp;&nbsp;&nbsp;&nbsp;Sample message Sample message</p>
+            </div>
+            <div class="menu-img-container">
+              <img class="menu-img" src="img/menu/japanese.jpg">
+            </div>
+          </div>
+          <!-- メニュー3つ目 -->
+          <div class="menu-container-flex">
+            <div class="menu-description">
+              <p class="menu-name">・Pesto Genovese</p>
+              <p class="menu-price">&nbsp;&nbsp;&nbsp;&nbsp;$15.00</p>
+              <p class="menu-msg">Sample message Sample message <br>&nbsp;&nbsp;&nbsp;&nbsp;Sample message Sample message</p>
+            </div>
+            <div class="menu-img-container">
+              <img class="menu-img" src="img/menu/Genovese.jpg">
+            </div>
+          </div>
+          <!-- メニュー4つ目 -->
+          <div class="menu-container-flex">
+            <div class="menu-description">
+              <p class="menu-name">・Spaghetti Carbonara</p>
+              <p class="menu-price">&nbsp;&nbsp;&nbsp;&nbsp;$15.00</p>
+              <p class="menu-msg">Sample message Sample message <br>&nbsp;&nbsp;&nbsp;&nbsp;Sample message Sample message</p>
+            </div>
+            <div class="menu-img-container">
+              <img class="menu-img" src="img/menu/carbonara.jpg">
+            </div>
+          </div>
+          <!-- メニュー5つ目 -->
+          <div class="menu-container-flex">
+            <div class="menu-description">
+              <p class="menu-name">・Porcini Pasta</p>
+              <p class="menu-price">&nbsp;&nbsp;&nbsp;&nbsp;$15.00</p>
+              <p class="menu-msg">Sample message Sample message <br>&nbsp;&nbsp;&nbsp;&nbsp;Sample message Sample message</p>
+            </div>
+            <div class="menu-img-container">
+              <img class="menu-img" src="img/menu/porcini.jpg">
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+    <!-- フッター -->
+    <footer id="footer">
+      <p id="copyright">&copy;2024 Stunning Coffee. All Rights Reserved.</p>
+    </footer>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</html>

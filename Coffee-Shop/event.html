@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stunning Coffee - Events</title>
+    <meta charset="utf-8">
+    <meta description="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Jomolhariフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jomolhari&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header header-color">
+      <div>
+        <a id="logo-a" href="index.html"><div id="logo">Stunning Coffee</div></a>
+      </div>
+      <!-- ハンバーガーメニュー -->
+      <div class="nav">
+        <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+        <input id="drawer_input" class="drawer_hidden" type="checkbox">
+        <!-- ハンバーガーアイコン -->
+        <label for="drawer_input" class="drawer_open"><span></span></label>
+        <!-- ナビゲーション -->
+        <nav class="nav_content">
+          <ul class="nav_list">
+            <li><a class="nav_item" href="about.html"><p class="nav-a h_top">About</p></a></li>
+            <li><a class="nav_item" href="menus.html"><p class="nav-a h_border">Menus</p></a></li>
+            <li><a class="nav_item" href="event.html"><p class="nav-a h_border">Events</p></a></li>
+            <li><a class="nav_item" href="hire.html"><p class="nav-a h_border">Hiring</p></a></li>
+            <li><a class="nav_item" href="contact.html"><p class="nav-a h_border">Contact</p></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- メインタグ -->
+    <main>
+      <!-- Events -->
+      <section id="about-us">
+        <div class="smb-img">
+          <img src="img/drink-with.jpg">
+        </div>
+        <p class="page-title">Events</p>
+      </section>
+      
+      <!-- Events msg -->
+      <section id="event-main-msg">
+        <p>Hosting an event?</p>
+        <p>Whether you need coffee & pastries at the office, or you're having a full blown event,<br>
+        Our services include coffee & tea, fresh-baked pastries, delicious food, and of course, cocktails.<br>
+        Interested in renting out one of our beautiful spaces? Find out more below.</p>        
+      </section>
+
+      <!-- Formセクション -->
+      <section id="event-apply-form">
+        <p id="event-form-notice">please complete the form below:</p>
+        <!-- form -->
+        <form>          
+          <!-- Name -->
+          <div>
+            <span class="event-item-title">Name</span>
+            <span class="event-mandatory">*</span>
+          </div>
+          <input class="event-form-input" type="text" name="event-name" value="" placeholder="Sample Name">
+          <!-- Emails -->
+          <div>
+            <span class="event-item-title">Emails</span>
+            <span class="event-mandatory">*</span>
+          </div>          
+          <input class="event-form-input" type="text" name="event-email" value="" placeholder="AAAA@sample.com">
+          <!-- Phone -->
+          <div>
+            <span class="event-item-title">Phone</span>
+            <span class="event-mandatory">*</span>
+          </div>
+          <input class="event-form-input" type="text" name="event-phone" value="">
+          <!-- Date -->
+          <div>
+            <span class="event-item-title">Desired Date of Events</span>
+            <span class="event-mandatory">*</span>
+          </div>
+          <input class="event-form-input-date" type="date" name="event-date" value="" is="default-date">
+          <!-- Time -->
+          <div>
+            <span class="event-item-title">Desired Time of Events</span>
+            <span class="event-mandatory">*</span>
+          </div>
+          <input class="event-form-input-date" type="time" name="event-time" value="">
+          <!-- Guest -->
+          <div>
+            <span class="event-item-title">Number of Guests</span>
+            <span class="event-mandatory">*</span>
+          </div>
+          <input class="event-form-input" type="text" name="event-guest" value="">
+          <!-- Location -->
+          <div>
+            <span class="event-item-title">Location of Interest</span>
+            <span class="event-mandatory">*</span>
+          </div>
+          <input class="event-form-input" type="text" name="event-location" value="">
+          <!-- others -->
+          <div>
+            <span class="event-item-title">Tell us a little about your events</span>
+            <span class="event-mandatory">*</span>
+          </div>
+          <textarea class="event-form-input" name="event-other" value="" placeholder="please feel free to use here"></textarea>
+          <div class="submit-btn-div">
+            <button id="event-btn" class="submit-btn" type="submit" name="event-submit">SUBMIT</button>
+          </div>
+        </form>
+        <hr size="1" class="event-horizon">
+      </section>
+      
+      <!-- Imageセクション -->
+       <section id="event-img">
+        <div>
+          <img src="img/celebration-1.jpg">
+          <img src="img/celebration-2.jpg">
+          <img src="img/celebration-3.jpg">
+        </div>
+       </section>
+      
+    </main>
+    
+    <!-- フッター -->
+    <footer id="footer">
+      <p id="copyright">&copy;2024 Stunning Coffee. All Rights Reserved.</p>
+    </footer>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</html>
