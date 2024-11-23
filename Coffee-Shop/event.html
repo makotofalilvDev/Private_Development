@@ -100,7 +100,15 @@
             <span class="event-item-title">Location of Interest</span>
             <span class="event-mandatory">*</span>
           </div>
-          <input class="event-form-input" type="text" name="event-location" value="">
+          <!-- <input class="event-form-input" type="text" name="event-location" value=""> -->
+          <select class="event-form-input" name="event-location">
+            <option value="">Select the Desired Place</option>
+            <option value="Rochester, NewYork">Rochester, NewYork</option>
+            <option value="Boston, Massachusetts">Boston, Massachusetts</option>
+            <option value="Tampa. Florida">Tampa. Florida</option>
+            <option value="Houston, Texas">Houston, Texas</option>
+            <option value="Santa Barbara, California">Santa Barbara, California</option>
+          </select>
           <!-- others -->
           <div>
             <span class="event-item-title">Tell us a little about your events</span>
@@ -108,7 +116,7 @@
           </div>
           <textarea class="event-form-input" name="event-other" value="" placeholder="please feel free to use here"></textarea>
           <div class="submit-btn-div">
-            <button id="event-btn" class="submit-btn" type="submit" name="event-submit">SUBMIT</button>
+            <button id="event-btn" class="submit-btn" type="submit" name="event-submit" onclick="return eventCheckValue()">SUBMIT</button>
           </div>
         </form>
         <hr size="1" class="event-horizon">
