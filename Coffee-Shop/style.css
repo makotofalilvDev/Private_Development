@@ -522,8 +522,28 @@ body {
     text-align: center;
     margin: 100px 0 50px 0;
   }
-  #hire-btn {
+  #contact-btn {
     margin-bottom: 120px;
+  }
+  #contact-details {
+    max-width: 1200px;
+    min-width: 900px;
+    margin: 0 auto;
+  }
+  .contact-details-desc {
+    font-size: 22px;
+    color: #FFF1BD;
+    width: 700px;
+    margin: 0 auto;
+  }
+  #inner-shop-div {
+    margin: 135px auto 100px auto;
+    text-align: center;
+  }
+  #inner-shop {
+    width: 850px;
+    height: 350px;
+    object-fit: cover;  /* 画像の型崩れ防止 */
   }
 
 }
@@ -1033,6 +1053,87 @@ body {
     font-optical-sizing: auto;
     font-family: "Jomolhari", serif;
     margin-top: 35px;
+  }
+
+  /* contact.html */
+  #contact-main-msg {
+    min-width: 450px;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+  .contact-msg-line {
+    display: flex;
+    width: 475px;
+    margin: 35px auto;
+  }
+  .contact-msg-title {
+    width: 125px;
+    height: 35px;
+    color: #FFF1BD;
+    font-size: 22px;
+    margin-right: 60px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border-bottom: 1px solid #FFF1BD;
+    text-align: center;
+  }
+  .contact-msg-desc {
+    flex-grow: 1;
+    font-size: 16px;
+  }
+  .sendmsg-btn-div {
+    text-align: center;
+  }
+  .send-btn {
+    font-size: 13px;
+    width: 118px;
+    border-width: 1px;
+    padding: 5px 10px;
+    background-color: #000000;
+    cursor: pointer;
+    color: #FFFFFF;
+    border: 1px solid #ffffff;
+    font-optical-sizing: auto;
+    font-family: "Jomolhari", serif;
+    margin-top: 35px;
+  }
+
+  /* Formセクション */
+  #contact-apply-form {
+    margin: 55px 0 25px 0;
+  }
+  #contact-apply-form > form{
+    width: 305px;
+    margin: 0 auto;
+    padding-left: 100px;
+  }
+  #contact-apply-form > form > div {
+    margin: 15px 0 -10px 0;
+  }
+  #contact-form-notice {
+    font-size: 22px;
+    text-align: center;
+    margin: 100px 0 50px 0;
+  }
+  #contact-details {
+    min-width: 450px;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+  .contact-details-desc {
+    font-size: 14px;
+    color: #FFF1BD;
+    width: 300px;
+    margin: auto;
+  }
+  #inner-shop-div {
+    margin: 85px auto 100px auto;
+    text-align: center;
+  }
+  #inner-shop {
+    width: 350px;
+    height: 150px;
+    object-fit: cover;  /* 画像の型崩れ防止 */
   }
 
 }
